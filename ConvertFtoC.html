@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fahrenheit to Celsius</title>
+    <script type="text/javascript">
+    var celcius = 0;
+    var entry;
+
+    do {
+        entry = prompt("Enter Fahrenheit temperature\n" +
+            "Or enter 999 to end entries", 999);
+        entry = parseInt(entry);
+        if (entry >= -100 && entry <= 212) {
+            celcius = (entry - 32) * 5 / 9;
+            alert("Farhrenheit temperature is " + entry +
+                "\n\nCelsius temperature is " + celcius);
+        } else if (entry != 999) {
+            alert("You entered " + entry +
+                "\nEntry must by a valid number from -100 through +212\n" +
+                "Or enter 999 to end entries");
+        }
+    }
+    while (entry != 999);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
